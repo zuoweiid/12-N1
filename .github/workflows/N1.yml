@@ -108,7 +108,7 @@ jobs:
         name: ${{ env.DATE }} 🚀 N1-Openwrt-img | 编译
         allowUpdates: true                  # 显示最新的
         tag: ${{ env.version }}             # 左边标签显示 version的变量 ：ARMv8_ROOTFS
-        commit: main
+        commit: master                        # 等于main分支
         token: ${{ secrets.TOKEN }}
         body: |
           ## 以下为N1的最新固件（每日上午7:30左右自动编译打包最新固件）
